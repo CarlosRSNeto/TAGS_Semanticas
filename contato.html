@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Meu Mini Site - Contato</title>
-
+    <title>Meu Site - Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, aside, footer {
+            display: block;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
 </head>
-
 <body>
-
     <header>
-        <h1>Entre em Contato</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Entre em Contato 📱</h1>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
     <section>
         <article>
-            <h2>Envie-nos uma mensagem</h2>
+            <h2>Envie-nos uma Mensagem</h2>
             <form action="#" method="POST">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email"><br><br>
-                <label for="message">Mensagem:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
                 <input type="submit" value="Enviar">
             </form>
         </article>
     </section>
 
+    <aside>
+        <h2>Informações de Contato</h2>
+        <p>Telefone: (11) 1234-5678<br>
+        E-mail: contato@meusite.com</p>
+    </aside>
+
     <footer>
-        <p>&copy; 2024 Meu Mini Site. Todos os direitos reservados.</p>
+        <p>&copy; Carlos Roberto. 2024 Meu Site.</p>
     </footer>
-    
 </body>
 </html>
